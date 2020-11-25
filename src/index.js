@@ -41,7 +41,7 @@ ReactDOM.render(
   document.getElementById('react-app')
 ); */
 
-import { BlogPost } from './tarea/Tarea1.js'
+/* import { BlogPost } from './tarea/Tarea1.js'
 
 ReactDOM.render(
   <BlogPost
@@ -56,4 +56,44 @@ Creo que puede haber sido un perro, dado que en Argentina no hay ardillas.`}
   }}
 />,
 document.getElementById('react-app')
+) */
+
+/* import { MatchNombre } from './tarea/Tarea2.js'
+
+ReactDOM.render(
+  <MatchNombre
+  nombre = "Juan"
+  />, 
+  document.getElementById('react-app')
+) */
+
+/* import { PasswordInput } from './tarea/Tarea2.js'
+
+ReactDOM.render(
+  <PasswordInput
+  minLenght = {6}
+  />, 
+  document.getElementById('react-app')
+) */
+
+import { ValidationInput } from './tarea/Tarea2.js'
+
+function validateLength(value) {
+  return (value.length >= 8)
+}
+
+function validateSpacing(value) {
+  return (!value.match(" "))
+}
+
+function validateEmail(value) {
+  return (value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/))
+}
+
+ReactDOM.render(
+  <ValidationInput
+    validation = {validateEmail}
+    isPassword = {false}
+  />,
+  document.getElementById('react-app')
 )
