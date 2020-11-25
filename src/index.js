@@ -76,7 +76,7 @@ ReactDOM.render(
   document.getElementById('react-app')
 ) */
 
-import { ValidationInput } from './tarea/Tarea2.js'
+/* import { ValidationInput } from './tarea/Tarea2.js'
 
 function validateLength(value) {
   return (value.length >= 8)
@@ -96,4 +96,27 @@ ReactDOM.render(
     isPassword = {false}
   />,
   document.getElementById('react-app')
-)
+) */
+
+/* import { UncontrolledCheckbox } from './tarea/Tarea3.js'
+
+ReactDOM.render(
+  <UncontrolledCheckbox
+    name = 'casilla'
+    initialValue = {true}
+  />,
+  document.getElementById('react-app')
+) */
+
+import { CheckboxList } from './tarea/Tarea3.js'
+
+ReactDOM.render(
+  <CheckboxList
+    items={{
+      uno: false,
+      dos: true,
+      tres: false,
+    }}
+  />,
+  document.getElementById("react-app")
+);
