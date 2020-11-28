@@ -108,7 +108,7 @@ ReactDOM.render(
   document.getElementById('react-app')
 ) */
 
-import { CheckboxList } from './tarea/Tarea3.js'
+/* import { CheckboxList } from './tarea/Tarea3.js'
 
 ReactDOM.render(
   <CheckboxList
@@ -119,4 +119,17 @@ ReactDOM.render(
     }}
   />,
   document.getElementById("react-app")
+); */
+
+import { CheckboxListWithState } from "./tarea/Tarea4.js";
+
+ReactDOM.render(
+	<CheckboxListWithState
+		items={{
+			uno: false,
+			dos: true,
+			tres: false,
+		}}
+	/>,
+	document.getElementById("react-app")
 );
